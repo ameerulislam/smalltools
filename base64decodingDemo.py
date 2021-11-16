@@ -14,15 +14,10 @@ print(len(perinlist))
 value_list =[]
 for j in perinlist:
     coded_string = j[0]+j[1]+j[2]+j[3]+j[4]+j[5]
-    # print(coded_string)
     value = base64.b64decode(coded_string)
-    # print("link -> ", value, '\n')
-    # print("link -> ", value, '\n')
     value_list.append(value)
 
 for i in value_list: 
-    # print(i, type(i))
-    # break
     try:
         response = requests.get(i.decode('utf-8'))
         if(response.status_code == 200 ):
