@@ -7,8 +7,7 @@ urlObject = ["lwUUxTZS1nQUx1eFBKanJPVEZ2MnpCX0FSQVFBbEtGRHlYdTVS","bGlzbGFtJTQwZ
 
 urllen = len(urlObject)
 
-
-allPermutations = list(permutations(urlObject, 6))
+allPermutations = list(permutations(urlObject, urllen))
 perinlist = list(map(list, allPermutations))
 print(len(perinlist))
 value_list =[]
